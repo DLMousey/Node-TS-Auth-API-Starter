@@ -1,0 +1,37 @@
+{
+  "name": "node_api_ts_starter",
+  "version": "1.0.0",
+  "description": "An example starter repo for a typescript based node API with JWT Auth",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "precompile": "rm -rf dist && tslint -c tslint.json -p tsconfig.json --fix",
+    "start": "./node_modules/.bin/tsc-watch --onSuccess \"node .\""
+  },
+  "keywords": [],
+  "author": "DLMousey",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "class-validator": "^0.11.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "pg": "^7.18.2",
+    "tslint": "^6.1.0",
+    "typeorm": "^0.2.24",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.3",
+    "@types/jsonwebtoken": "^8.3.8",
+    "@types/morgan": "^1.9.0",
+    "@types/winston": "^2.4.4",
+    "tsc-watch": "^4.2.3",
+    "typescript": "^3.8.3"
+  }
+}
