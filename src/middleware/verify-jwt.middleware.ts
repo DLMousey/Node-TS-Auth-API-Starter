@@ -52,7 +52,7 @@ export default async function verifyJwt(req: Request, res: Response, next: NextF
         matchedRoute = { path: req.path, method: req.method, protected: true }
     }
 
-    if (!matchedRoute.protected) {
+    if (!matchedRoute.protected && !req.header('authorization')) {
         return next();
     }
 
