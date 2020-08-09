@@ -8,6 +8,7 @@ which is used to make importing routers much easier during application startup.
 
 - Create a new class in this file matching this template, replacing instances of the word `Example`
   and your specific routes in `initRoutes` as appropriate;
+  
 ```typescript
 import { Router } from "express";
 import { ApiRouter } from "./api-router.interface";
