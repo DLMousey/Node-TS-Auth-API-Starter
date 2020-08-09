@@ -22,5 +22,10 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
         
+    # Install project dependencies
+    - name: Install dependencies
+      run: npm ci
+        
+    # Run the project build, tsc runs in full trainspotter mode so code style violations will also trigger a build fail
     - name: Compile typescript
       run: npm run compile
