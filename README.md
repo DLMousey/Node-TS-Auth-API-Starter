@@ -33,4 +33,4 @@ cp .env.sample .env
 npm start
 ```
 
-You're now ready to start building your api, a good place to start would be adding [a new router](routers.md)
+You're now ready to start building your api, a good place to start would be adding [a new router](https://dlmousey.github.io/Node-TS-Auth-API-Starter/routers.html)
