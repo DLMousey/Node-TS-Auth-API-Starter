@@ -50,3 +50,5 @@ export {
     ExampleRouter
 }
 ```
+
+Now that you've created and registered a router, you should add a [controller to go with it](controllers.md)
