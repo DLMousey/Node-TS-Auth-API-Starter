@@ -4,13 +4,7 @@ and setting up and environment to work on the template itself (Template Dev).
 
 # Developer Setup (New API)
 
-- Click the "Use this template" button on the homepage for this repo;
-![Using the template](assets/new-api/use-template-github.png)
-
-- This will take you to a create repo page like so;
-![Creating your repository](assets/new-api/create-repo-from-template.png)
-
-- Follow the steps to create your repository
+- Click the "Use this template" button on the homepage for this repo and follow the steps to create your repository
 
 - Clone the new repo onto your machine;
 ```shell script
