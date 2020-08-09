@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+This repo contains a fully functional example RESTful API using NodeJS, Typescript, ExpressJS and TypeORM.
+The getting started guide on this page is split into 2 secions - creating your own API based off this template (New API), 
+and setting up and environment to work on the template itself (Template Dev).
 
-You can use the [editor on GitHub](https://github.com/DLMousey/Node-TS-Auth-API-Starter/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Developer Setup (New API)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Click the "Use this template" button on the homepage for this repo;
+![Using the template](assets/new-api/use-template-github.png)
 
-### Markdown
+- This will take you to a create repo page like so;
+![Creating your repository](assets/new-api/create-repo-from-template.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Follow the steps to create your repository
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+- Clone the new repo onto your machine;
+```shell script
+git clone https://github.com/your-username/your-repo-name
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- Open the project directory
+```shell script
+cd your-repo-name
+```
 
-### Jekyll Themes
+- Install the dependencies
+```shell script
+npm install
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DLMousey/Node-TS-Auth-API-Starter/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Create the environment file
+```shell script
+cp .env.sample .env
+```
 
-### Support or Contact
+- Open the new `.env` file you created and adjust the settings to match your development environment
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Start the development server
+```shell script
+npm start
+```
+
+You're now ready to start building your api, a good place to start would be adding [a new router](routers.md)
